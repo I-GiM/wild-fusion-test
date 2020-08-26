@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from './images/logo.svg'
 import { Navbar, Nav, Button } from 'react-bootstrap'
+import AboutItem from "./components/AboutItem";
 
 
 const LandingPage = () => {
@@ -57,6 +58,43 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+
+      {/* Brands Section */}
+      <div className="brands-section">
+        <img className="img-fluid mx-4" src={ require('./images/colgate-logo.png') } alt="" />
+        <img className="img-fluid mx-4" src={ require('./images/Purple_Inc_logo.png') } alt="" />
+        <img className="img-fluid mx-4" src={ require('./images/secret-lab-logo.png') } alt="" />
+        <img className="img-fluid mx-4" src={ require('./images/velasca-logo.png') } alt="" />
+        <img className="img-fluid mx-4" src={ require('./images/linjer-logo.png') } alt="" />
+      </div>
+
+      {/* About section */}
+      <div className="about-section">
+        <h2 className="about-header">User-Content<br />Generation Software<br />for Businesses</h2>
+        <div className="about-details-wrap">
+            <AboutItem
+              itemImage={ require('./images/increased-conversions.png') }
+              itemTitle={ 'Increased of\nconversions' }
+              itemText={ 'Lorem ipsum dolor sit amet,\n' +
+              'consectetur adipiscing elit.\n' +
+              'Mauris vel sem nisi. Ut porta,' }
+            />
+          <AboutItem
+            itemImage={ require('./images/direct-reviews.png') }
+            itemTitle={ 'Reviews directly\nin the mail' }
+            itemText={ 'Lorem ipsum dolor sit amet,\n' +
+            'consectetur adipiscing elit.\n' +
+            'Mauris vel sem nisi. Ut porta,' }
+          />
+          <AboutItem
+            itemImage={ require('./images/third-party.png') }
+            itemTitle={ 'Third-party\nintegrations' }
+            itemText={ 'Lorem ipsum dolor sit amet,\n' +
+            'consectetur adipiscing elit.\n' +
+            'Mauris vel sem nisi. Ut porta,' }
+          />
+        </div>
+      </div>
       </div>
     </React.Fragment>
   )
