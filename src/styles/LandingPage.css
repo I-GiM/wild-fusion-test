@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .body-wrap {
+  background-color: #F5F7FB;
   background-image: url('../images/bg-img.png');
   background-repeat: no-repeat;
   /*background-position: center;*/
@@ -40,13 +41,14 @@
   margin: 0 10px;
 }
 .button:hover {
-  background-color: #193890;
-  color: #FFFFFF;
-  /*border: 0.5px solid #FFFFFF;*/
-  box-sizing: border-box;
+  background-color: #FFFFFF;
+  color: #193890;
 }
 .button-2 {
   color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.button-2:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -72,6 +74,7 @@
 }
 .button-3:hover {
   background-color: #FCB041;
+  color: #FFFFFF;
 }
 .hero-section--images {
   /*display: flex;*/
@@ -89,6 +92,54 @@
 .emojis-beo {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+
+/* Brands section */
+.brands-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 75px 0;
+}
+
+/* About section */
+.about-section {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-header {
+  color: #32374E;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.about-details-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+.about-item {
+  /*margin: 30px 60px;*/
+}
+.about-item--image {
+  border-radius: 10px;
+}
+.about-item--title {
+  color: #32374E;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 20px 0;
+  white-space: pre-wrap;
+}
+.about-item--text {
+  color: #7F828A;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
 }
 
 /* Media Queries for various device screens*/
@@ -119,6 +170,11 @@
   .display-medium {
     display: none !important;
   }
+  .brands-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -131,5 +187,22 @@
   .hero-section--images {
     grid-template-columns: 1fr;
     /*place-items: center;*/
+  }
+  .brands-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-details-wrap {
+    grid-template-columns: 1fr;
+  }
+  .about-header {
+    font-size: 1.5rem;
+  }
+  .about-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 }
