@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.body-wrap {
+  background-image: url('../images/bg-img.png');
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  /*height: 100%;*/
+  padding: 0 4vw;
+}
+
+/* Nabvar Section*/
+.navigation {
+  padding: 20px 0;
+}
+.nav-links {
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF !important;
+  font-size: 0.875rem;
+  margin: auto 10px;
+}
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar-toggler:focus {
+  border: none;
+  outline: none;
+}
+.navbar-toggler-icon {
+  filter: invert(93%) sepia(0%) saturate(7475%) hue-rotate(81deg) brightness(113%) contrast(107%);
+}
+.button {
+  font-family: 'Poppins', sans-serif;
+  color: #193890;
+  padding: 10px 20px;
+  font-size: 0.875rem !important;
+  background-color: #FFFFFF;
+  border: none;
+  outline: none;
+  margin: 0 10px;
+}
+.button:hover {
+  background-color: #193890;
+  color: #FFFFFF;
+  /*border: 0.5px solid #FFFFFF;*/
+  box-sizing: border-box;
+}
+.button-2 {
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 0 20px;
+}
+.hero-section--header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  color: #FFFFFF;
+}
+.button-3 {
+  color: #FFFFFF;
+  background-color: #FCB041;
+  margin: 32px 0;
+}
+.button-3:hover {
+  background-color: #FCB041;
+}
+.hero-section--images {
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+  display: grid;
+  grid-template-columns: 20vw 22vw 20vw 1fr;
+  justify-items: center;
+}
+.hero-images-third {
+  margin-top: 70px;
+}
+.hero-images-fourth {
+  margin-top: -70px;
+}
+.emojis-beo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* Media Queries for various device screens*/
+@media (max-width: 991px) {
+  .navigation-links {
+    text-align: center;
+  }
+  .nav-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button {
+    margin: 10px 0;
+  }
+  .hero-section {
+    padding-top: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section--header {
+    font-size: 2rem;
+  }
+  .hero-section--images {
+    grid-template-columns: 1fr 1fr;
+  }
+  .display-medium {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 50px;
+  }
+  .hero-section--header {
+    font-size: 1.7rem;
+  }
+  .hero-section--images {
+    grid-template-columns: 1fr;
+    /*place-items: center;*/
+  }
+}
