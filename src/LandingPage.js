@@ -2,6 +2,7 @@ import React from 'react'
 import logo from './images/logo.svg'
 import { Navbar, Nav, Button } from 'react-bootstrap'
 import AboutItem from "./components/AboutItem";
+import CustomerSection from "./components/CustomerSection";
 
 
 const LandingPage = () => {
@@ -173,6 +174,139 @@ const LandingPage = () => {
               encourage your customers to<br />
               keep coming back for more.
             </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Developers section */}
+      <div className="dev-integration">
+        <div className="dev-section">
+          <h2 className="survey-header">Developers First</h2>
+          <p className="survey--text text-center">Supports all renowned<br />
+            e-commerce platforms, also with Reward<br />
+            Apps and Productivity apps</p>
+          <Button className="button button-3">All Integrations</Button>
+        </div>
+      </div>
+
+      {/* Integration section */}
+      <div className="integrated-wrap">
+        <img style={{
+          'position': 'relative',
+          'top': '-50px',
+          'width': '10vw'
+        }} className="" src={ require('./images/blue-3-marks.png') } alt="" />
+        <img style={{
+          'position': 'relative',
+          'top': '-250px',
+          'width': '9.5vw'
+        }} className="" src={ require('./images/shopify.png') } alt="" />
+        <img style={{
+          'position': 'relative',
+          'top': '100px',
+          'width': '4vw'
+        }} className="" src={ require('./images/purple lion.png') } alt="" />
+        <img style={{
+          'position': 'relative',
+          'top': '-90px',
+          'width': '10vw'
+        }} className="" src={ require('./images/black-b-triangle.png') } alt="" />
+        <img style={{
+          'position': 'relative',
+          'top': '20px',
+          'right': '-50px',
+          'width': '9vw'
+        }} className="" src={ require('./images/yellow-handle.png') } alt="" />
+        <img style={{
+          'position': 'relative',
+          'top': '-180px',
+          'right': '-90px',
+          'width': '6vw'
+        }} className="" src={ require('./images/blue-s.png') } alt="" />
+        <img style={{
+          'position': 'relative',
+          'top': '200px',
+          'right': '-150px',
+          'width': '4.5vw'
+        }} className="" src={ require('./images/blue-cart.png') } alt="" />
+        <img style={{
+          'position': 'relative',
+          'top': '-250px',
+          'right': '-200px',
+          'width': '8vw'
+        }} className="" src={ require('./images/woo.png') } alt="" />
+        <img style={{
+          'position': 'relative',
+          'top': '-40px',
+          'right': '-130px',
+          'width': '12vw'
+        }} className="" src={ require('./images/orange-star.png') } alt="" />
+        <img style={{
+          'position': 'relative',
+          'top': '-140px',
+          'right': '-80px',
+          'width': '8.5vw'
+        }} className="" src={ require('./images/orange-mavin.png') } alt="" />
+      </div>
+        <div className="integrated-wrap-mobile">
+          <img className="int-img-1 img-fluid" src={ require('./images/blue-3-marks.png') } alt="" />
+          <img className="int-img-2 img-fluid" src={ require('./images/shopify.png') } alt="" />
+          <img className="int-img-3 img-fluid" src={ require('./images/black-b-triangle.png') } alt="" />
+          <img className="int-img-4 img-fluid" src={ require('./images/yellow-handle.png') } alt="" />
+        </div>
+
+      {/*  Customer section */}
+      <CustomerSection />
+
+      <div className="start-wrap">
+        <div className="">
+          <img className="img-fluid start-img" src={require('./images/pc-mockup-1.png')} alt="" />
+        </div>
+        <div className="start-header-wrap">
+          <h1 className="hero-section--header start-header">Start growing<br />with us today</h1>
+          <Button className="button button-3">Sign up Free</Button>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="footer">
+        <div className="footer-item">
+          <span className="footer-item--title"><a href="">FEATURE</a></span>
+          <span className="footer-item--text"><a href="">Reviews & Ratings</a></span>
+          <span className="footer-item--text"><a href="">Community Q & A</a></span>
+          <span className="footer-item--text"><a href="">Net Promoter Score</a></span>
+          <span className="footer-item--text"><a href="">Social Media Marketing</a></span>
+          <span className="footer-item--text"><a href="">Checkout Review</a></span>
+          <span className="footer-item--text"><a href="">Sentiment Analysis</a></span>
+        </div>
+        <div className="footer-item">
+          <span className="footer-item--title"><a href="">HELP & ADVICE</a></span>
+          <span className="footer-item--text"><a href="">Help Center</a></span>
+          <span className="footer-item--text"><a href="">Contact Support</a></span>
+          <span className="footer-item--text"><a href="">GDPR</a></span>
+          <span className="footer-item--text"><a href="">Release Notes</a></span>
+        </div>
+        <div className="footer-item">
+          <span className="footer-item--title"><a href="">COMPANY</a></span>
+          <span className="footer-item--text"><a href="">About Us</a></span>
+          <span className="footer-item--text"><a href="">Press Room</a></span>
+          <span className="footer-item--text"><a href="">We Are Hiring</a></span>
+          <span className="footer-item--text"><a href="">Blog</a></span>
+        </div>
+        <div className="footer-item">
+          <span className="footer-item--title"><a href="">GET IN TOUCH</a></span>
+          <span className="footer-item--text"><a href="">Feel free to get in touch in with us via email</a></span>
+          <span className="footer-item--text"><a className="footer-email" href="">hello@gmail.com</a></span>
+          <div className="d-flex justify-content-center">
+            <span className="footer-item--text mx-2"><a href="">
+              <img className="" src={require('./images/facebook-icon.svg')} alt=""/>
+            </a></span>
+            <span className="footer-item--text mx-2"><a href="">
+              <img className="" src={require('./images/twitter-icon.svg')} alt=""/>
+            </a></span>
+            <span className="footer-item--text mx-2"><a href="">
+              <img classname="" src={require('./images/linkedin-icon.svg')} alt="" />
+            </a></span>
           </div>
         </div>
       </div>
