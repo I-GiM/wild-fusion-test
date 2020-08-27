@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
 .body-wrap {
   background-color: #F5F7FB;
   background-image: url('../images/bg-img.png');
@@ -142,6 +146,140 @@
   white-space: pre-wrap;
 }
 
+/* Survey section */
+.survey-section {
+  /*padding-bottom: -300px;*/
+}
+.survey-header {
+  color: #32374E;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.survey-details-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: -4vw;
+}
+.survey-details--left {
+  display: flex;
+  justify-self: center;
+}
+.user-star {
+  width: 50px;
+  height: 50px;
+  background-color: #FCB041;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.little-header {
+  color: #FCB041;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+.survey--text {
+  color: #7F828A;
+  font-size: 0.9rem;
+}
+.survey--list {
+  padding: 50px;
+  background-color: #182281;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.survey--list-item {
+  border-top: 1px solid #222EA4;
+  padding: 20px 70px 20px 0;
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+.survey--item {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.selected-item {
+  color: #FCB041;
+}
+sup {
+  color: #FCB041;
+  margin-right: 2px;
+  font-size: 0.5rem;
+}
+.survey--image {
+  position: relative;
+  top: -300px;
+  left: 2%;
+  width: 60vw;
+}
+
+/* Business goals section*/
+.biz-goals-section {
+  margin: -250px -4vw 0;
+  background-color: #FFFFFF;
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+}
+.goals-wrap {
+  margin: 0 4vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+.goals-left {
+  background-image: url('../images/bg-img-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+}
+.goals-num-wrap {
+  margin-right: 70px;
+}
+.goals-num {
+  color: #FFFFFF;
+  font-size: 0.5rem;
+  margin: 10px 0;
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.round-select {
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
+.goals-header {
+  color: #FFFFFF;
+}
+.goals--text {
+  color: #ffffff;
+}
+.button-4 {
+  color: #FCB041;
+  padding: 12px 24px;
+  font-weight: 500;
+}
+.goals-right {
+  padding: 70px;
+  background-color: #FFFAF0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Media Queries for various device screens*/
 @media (max-width: 991px) {
   .navigation-links {
@@ -157,6 +295,26 @@
   }
   .hero-section {
     padding-top: 75px;
+  }
+  .user-star {
+    display: none;
+  }
+  .survey-details-wrap {
+    grid-template-columns: 1fr;
+    margin: 0 -4vw;
+  }
+  .survey-details--left {
+    padding: 0 4vw;
+  }
+  .survey--list {
+    padding: 50px 5vw;
+  }
+  .survey--image {
+    display: none;
+  }
+  .biz-goals-section {
+    margin: 0 -4vw;
+    padding: 150px 0;
   }
 }
 
@@ -174,6 +332,22 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 20px;
+  }
+  .goals-wrap {
+    grid-template-columns: 1fr;
+  }
+  .goals-left {
+    padding: 50px 4vw;
+  }
+  .goals-num-wrap {
+    margin-right: 4vw;
+  }
+  .goals-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 4vw;
   }
 }
 
@@ -204,5 +378,9 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+  }
+  .survey--list-item {
+    padding: 20px 4vw 20px 0;
+    width: 250px;
   }
 }
