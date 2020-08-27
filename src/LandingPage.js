@@ -95,6 +95,87 @@ const LandingPage = () => {
           />
         </div>
       </div>
+
+      {/* Survey section */}
+      <div className="survey-section">
+        <div className="survey-details-wrap">
+          <div className="survey-details--left">
+            <div className="user-star">
+              <img className="img-fluid" src={ require('./images/vaadin_user-star.svg') } alt="" />
+            </div>
+            <div className="">
+              <span className="little-header">PLATFORM</span>
+              <h2 className="survey-header">Net Promoter<br />Score Surveys</h2>
+              <p className="survey--text">A simple and proven methodology that<br />
+              companies use to measure customer happiness as<br />
+              it relates to company brand, product or service</p>
+            </div>
+          </div>
+          <div className="survey--list">
+            <div className="survey--list-item">
+              <img className="pr-4" src={ require('./images/vaadin_user-star-orange.svg') } alt=""/>
+              <span className="survey--item selected-item"><sup>01</sup>Reviews & Ratings</span>
+            </div>
+            <div className="survey--list-item">
+              <img className="pr-4" src={ require('./images/raphael_chat.svg') } alt=""/>
+              <span className="survey--item"><sup>02</sup>Community Q & A</span>
+            </div>
+            <div className="survey--list-item">
+              <img className="pr-4" src={ require('./images/ic_sharp-emoji-emotions.svg') } alt=""/>
+              <span className="survey--item"><sup>03</sup>Net Promoter Score</span>
+            </div>
+            <div className="survey--list-item">
+              <img className="pr-4" src={ require('./images/ic_baseline-share.svg') } alt=""/>
+              <span className="survey--item"><sup>04</sup>Social Media Marketing</span>
+            </div>
+            <div className="survey--list-item">
+              <img className="pr-4" src={ require('./images/fa-solid_shopping-cart.svg') } alt=""/>
+              <span className="survey--item"><sup>05</sup>Checkout Review</span>
+            </div>
+            <div className="survey--list-item">
+              <img className="pr-4" src={ require('./images/ant-design_pie-chart-filled.svg') } alt=""/>
+              <span className="survey--item"><sup>06</sup>Sentiment Analysis</span>
+            </div>
+          </div>
+        </div>
+        <div className="survey--image">
+          <img className="img-fluid" src={ require('./images/dashboard-pic.png') } alt="" />
+        </div>
+      </div>
+
+      {/* Business goals section */}
+      <div className="biz-goals-section">
+        <div className="goals-wrap">
+          <div className="goals-left">
+            <div  className="goals-num-wrap">
+              <div className="goals-num">1</div>
+              <div className="goals-num">2</div>
+              <div className="goals-num round-select">3</div>
+              <div className="goals-num">4</div>
+              <div className="goals-num">5</div>
+              <div className="goals-num">6</div>
+              <div className="goals-num">7</div>
+              <div className="goals-num">8</div>
+            </div>
+            <div className="goals-header-wrap">
+              <h2 className="survey-header goals-header">Realize your<br />Business Goals</h2>
+              <p className="survey--text goals--text">You want to build trust and increase<br />
+                sales for your business. Stamped.io<br />
+                makes these objectives easy to achieve.</p>
+              <Button className="button button-4">Sign up Now</Button>
+            </div>
+          </div>
+          <div className="goals-right">
+            <img className="img-fluid" src={ require('./images/discount-chat.png') } alt="" />
+            <h3 className="about-item--title text-center">Retention</h3>
+            <p className="about-item--text text-center">
+              Build a community and<br />
+              encourage your customers to<br />
+              keep coming back for more.
+            </p>
+          </div>
+        </div>
+      </div>
       </div>
     </React.Fragment>
   )
